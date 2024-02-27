@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+    cadeia cliente, senha
+    real saldo, sacar, depositar
+    escreva ("-------------------------------------------------------------\n")
+    escreva ("Banco Falso")
+    escreva ("\n-------------------------------------------------------------\n")
+    escreva ("Olá, Digite seu Nome: ")
+    leia(cliente)
+    escreva("Agora digite sua senha: ")
+    leia(senha)
+    escreva ("Seja bem vindo ", cliente "!\n")
+    saldo = 1000
+    escreva ("\nSaldo atual R$ ", saldo)
+    escreva ("\n -------------------------------------------------------------\n")
+    escreva  ("Digite o valor que irá sacar: R$ ")
+    leia (sacar)
+    se (sacar > saldo)
+    {
+      escreva ("Saldo insuficiente!")
+    }
+    senao
+    {
+      saldo = saldo - sacar 
+      escreva ("\nSucesso valor sacado R$", sacar "!\n")
+      escreva ("\nSaldo Atual R$ ", saldo)
+    }
+    escreva ("\n---------------------------------------------------------\n")
+    escreva ("\nDigite o valor que irá depositar R$ ")
+    leia (depositar)
+    saldo  = saldo +  depositar
+    {
+    escreva ("\nValor depositado R$ ", depositar)
+    escreva ("\nSaldo atual R$ ", saldo)
+    }
+  }
+}
